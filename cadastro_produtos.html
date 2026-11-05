@@ -1,0 +1,33 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produtos</title>
+</head>
+
+<body>
+    <form action="gravar_produto.php" method="POST">
+        <fieldset>
+            <legend>Cadastro de Produtos</legend>
+
+            <label>Descrição:</label><br>
+            <input type="text" name="txt_descricao" maxlength="100" size="60" required><br><br>
+
+            <label>Categoria:</label><br>
+            <input type="text" name="txt_categoria" maxlength="50" size="60" required><br><br>
+
+            <label>Valor de Compra:</label><br>
+            <input type="number" step="0.01" name="txt_compra" required><br><br>
+
+            <label>Valor de Venda:</label><br>
+            <input type="number" step="0.01" name="txt_venda" required><br><br>
+
+            <label>Quantidade em Estoque:</label><br>
+            <input type="number" name="txt_estoque" required><br><br>
+
+            <input type="submit" value="CADASTRAR PRODUTO">
+        </fieldset>
+    </form>
+</body>
+
+</html>
